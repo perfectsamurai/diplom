@@ -1,0 +1,104 @@
+.footer {
+    margin-top:50px;
+    position: relative;
+    background-color: #e7e7e7;;
+    color: black;
+    text-align: center;
+    padding: 40px 0;
+}
+table {
+	width: 100%;
+    
+	margin-bottom: 20px;
+	border: 15px solid #F2F8F8;
+	border-top: 5px solid #F2F8F8;
+	border-collapse: collapse; 
+
+}й
+input{
+padding: 10px;
+border-radius: 10px;
+}
+
+ th {
+	font-weight: bold;
+	padding: 5px;
+	background: #F2F8F8;
+	border: none;
+	border-bottom: 5px solid #F2F8F8;
+}
+ td {
+	padding: 5px;
+	border: none;
+	border-bottom: 5px solid #F2F8F8;
+}
+.footer #back-to-top {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: -20px;
+    height: 40px;
+    line-height: 48px;
+    color: #333;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    cursor: pointer;
+    font-size: 36px;
+    text-align: center;
+    z-index: 99;
+}
+
+.footer__wrapper {
+    position: relative;
+}
+
+.footer__social {
+    margin-bottom: 0;
+}
+
+.footer__social a {
+    color: #fff;
+}
+
+.footer__social a:hover {
+    color: #19c2c9;
+}
+
+.footer__copy {
+    color: black;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+#table_documents {
+    counter-reset: section;  
+}
+
+.table_documents-number:after {
+   content: counter(section);
+   display: block;
+   width: 100%;
+   text-align: center;
+   counter-increment: section;  
+   font-size: 18px;
+   font-weight: bold;
+}
+
+#importform {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+	justify-content: center;
+	margin-top: 10px;
+	flex-wrap: wrap;
+}
+
+@media (min-width: 993px) {
+    .footer {
+        padding: 80px 0;
+    }
+}
